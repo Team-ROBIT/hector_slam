@@ -8,6 +8,11 @@
     <param name="frame_id" value="map"/>
   </node>
 
+  <param name="competition" type="string" value="RoboCup2024" />
+  <param name="team" type="string" value="ROBIT" />
+  <param name="mission" type="string" value="Avoid_Holes" />
+  <param name="map_file_postfix" type="string" value="" />
+
   <!-- Start hector_geotiff node -->
   <node pkg="hector_geotiff" type="geotiff_node" name="hector_geotiff_node" output="screen" launch-prefix="nice -n 15">
     <!-- <remap from="map" to="scanmatcher_map" /> -->
